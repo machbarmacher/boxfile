@@ -26,6 +26,13 @@ class Boxfile {
     }
 
     /**
+     * @return float
+     */
+    public function getVersion() {
+      return $this->version;
+    }
+
+    /**
      * Retrieves environement specific file mappings.
      *
      * @param string $environment

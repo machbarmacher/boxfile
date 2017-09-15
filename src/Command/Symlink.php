@@ -65,8 +65,10 @@ class Symlink extends Command
             throw new DirectoryNotFoundException('Could not set symlinks as "%s" is no valid directory.', $docroot);
         }
 
-        // Change to docroot, so we can set symlinks relative.
-        chdir($docroot);
+        // Only for version 1 change to docroot, so we can set symlinks relative.
+        if ($conf->getVersion() < 2) {
+          chdir($docroot);
+        }
 
         // We use the command from symlinker as a temporary command.
         $command = new SymlinkSingleCmd('temp-symlink-single');
