@@ -7,8 +7,12 @@ This is a tool for applying Boxfile specifics to your project. A _Boxfile_ is a 
 The tool can be installed via Composer.
 
 ```sh
-composer require derhasi/boxfile
+composer require machbarmacher/boxfile
 ```
+
+## Kudos
+
+Thanks to derhasi for the V1 implementation.
 
 ## Command
 

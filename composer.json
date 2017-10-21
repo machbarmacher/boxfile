@@ -1,5 +1,5 @@
 {
-    "name": "derhasi/boxfile",
+    "name": "machbarmacher/boxfile",
     "description": "Command to handle freistil Boxfiles anywhere",
     "require": {
         "symfony/yaml": "2.*",
@@ -13,6 +13,10 @@
         {
             "name": "Johannes Haseitl",
             "email": "johannes@undpaul.de"
+        },
+        {
+            "name": "Axel Rutz",
+            "email": "axel.rutz@machbarmacher.net"
         }
     ],
     "autoload": {
