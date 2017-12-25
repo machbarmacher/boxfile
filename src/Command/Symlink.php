@@ -61,12 +61,12 @@ class Symlink extends Command
 
         $file_mappings = $conf->getEnvironmentSpecificFiles($environment);
 
-        if (!is_dir($docroot)) {
-            throw new DirectoryNotFoundException('Could not set symlinks as "%s" is no valid directory.', $docroot);
-        }
-
         // Only for version 1 change to docroot, so we can set symlinks relative.
         if ($conf->getVersion() < 2) {
+          if (!is_dir($docroot)) {
+            throw new DirectoryNotFoundException('Could not set symlinks as "%s" is no valid directory.', $docroot);
+          }
+
           chdir($docroot);
         }
 
